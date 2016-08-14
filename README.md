@@ -1,6 +1,5 @@
-# 2Dシューティングゲーム
+# これなに
 
-![](https://github.com/unity3d-jp-tutorials/2d-shooting-game/wiki/images/Home/top_thumb_intro.jpg)
+https://github.com/unity3d-jp-tutorials/2d-shooting-game/wiki
 
-
-チュートリアルページは[こちら](https://github.com/unity3d-jp-tutorials/2d-shooting-game/wiki)
+上記したページを見ながら作成しているSTGをGitHubで管理しています．
