@@ -9,6 +9,7 @@ public class Spaceship : MonoBehaviour
     public float shotDelay;
     public GameObject bullet;
     public bool canShot;
+    public GameObject explosion;
 
     // Use this for initialization
     void Start()
@@ -20,6 +21,11 @@ public class Spaceship : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void Explosion()
+    {
+        Instantiate(explosion, transform.position, transform.rotation);
     }
 
     public void Shot(Transform origin)

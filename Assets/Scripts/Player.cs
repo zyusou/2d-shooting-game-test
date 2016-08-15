@@ -35,4 +35,13 @@ public class Player : MonoBehaviour
 	    //GetComponent<Rigidbody2D>().velocity = direction*speed;
         spaceShip.Move(direction);
 	}
+
+    void OnTriggerEnter2D(Collider2D c)
+    {
+        Destroy(c.gameObject);
+
+        spaceShip.Explosion();
+
+        Destroy(gameObject);
+    }
 }
