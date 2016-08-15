@@ -3,21 +3,19 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
-    private Spaceship spaceShip;
+    // 移動速度
+    public float speed = 5;
+
+    public GameObject bullet;
 
 	// Use this for initialization
-	IEnumerator Start ()
-	{
-
-	    spaceShip = GetComponent<Spaceship>();
-
+	IEnumerator Start () {
 	    while (true)
 	    {
             //弾をプレイヤと同じ位置/角度で作成
-	        //Instantiate(bullet, transform.position, transform.rotation);
+	        Instantiate(bullet, transform.position, transform.rotation);
 
-            spaceShip.Shot(transform);
-            yield return new WaitForSeconds(spaceShip.shotDelay);
+            yield return new WaitForSeconds(0.05f);
 	    }
 	}
 	
@@ -32,7 +30,7 @@ public class Player : MonoBehaviour
 	    Vector2 direction = new Vector2(x, y).normalized;
 
         //　アタッチされたコンポーネントに反映
-	    //GetComponent<Rigidbody2D>().velocity = direction*speed;
-        spaceShip.Move(direction);
+	    GetComponent<Rigidbody2D>().velocity = direction*speed;
+
 	}
 }
