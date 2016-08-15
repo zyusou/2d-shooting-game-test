@@ -171,6 +171,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012771834622, guid: 71379f0b6975c7d4a84016613184aa4f, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71379f0b6975c7d4a84016613184aa4f, type: 2}
   m_IsPrefabParent: 0
@@ -271,7 +275,7 @@ GameObject:
   - 4: {fileID: 1984788726}
   - 61: {fileID: 1984788725}
   - 114: {fileID: 1984788724}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: DestroyArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
