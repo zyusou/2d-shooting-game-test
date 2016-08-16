@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
             //Instantiate(bullet, transform.position, transform.rotation);
 
             spaceShip.Shot(transform);
+            GetComponent<AudioSource>().Play();
             yield return new WaitForSeconds(spaceShip.shotDelay);
         }
     }
