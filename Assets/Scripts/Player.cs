@@ -68,6 +68,7 @@ public class Player : MonoBehaviour
 
         if (layerName == "Bullet(Enemy)" || layerName == "Enemy")
         {
+            FindObjectOfType<Manager>().GameOver();
             spaceShip.Explosion();
             Destroy(gameObject);
         }
