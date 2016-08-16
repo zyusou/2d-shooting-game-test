@@ -32,9 +32,4 @@ public class Spaceship : MonoBehaviour
     {
         Instantiate(bullet, origin.position, origin.rotation);
     }
-
-    public void Move(Vector2 direction)
-    {
-        GetComponent<Rigidbody2D>().velocity = direction * speed;
-    }
 }
