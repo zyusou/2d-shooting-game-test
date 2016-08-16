@@ -34,7 +34,25 @@ public class Player : MonoBehaviour
 
         //　アタッチされたコンポーネントに反映
         //GetComponent<Rigidbody2D>().velocity = direction*speed;
-        spaceShip.Move(direction);
+        //spaceShip.Move(direction);
+
+        Move(direction);
+    }
+
+    private void Move(Vector2 direction)
+    {
+        Vector2 minVector2 = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+
+        Vector2 maxVector2 = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+
+        Vector2 pos = transform.position;
+
+        pos += direction * spaceShip.speed * Time.deltaTime;
+
+        pos.x = Mathf.Clamp(pos.x, minVector2.x, maxVector2.x);
+        pos.y = Mathf.Clamp(pos.y, minVector2.y, maxVector2.y);
+
+        transform.position = pos;
     }
 
     void OnTriggerEnter2D(Collider2D c)
