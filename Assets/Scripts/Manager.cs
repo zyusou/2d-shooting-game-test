@@ -30,6 +30,7 @@ public class Manager : MonoBehaviour
 
     public void GameOver()
     {
+        FindObjectOfType<Score>().Save();
         title.SetActive(true);
     }
 
