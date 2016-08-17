@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  shotDelay: 0.3
+  shotDelay: 0.6
   bullet: {fileID: 1000012775022644, guid: 788128e804c62204b84dd21d880bcefd, type: 2}
   canShot: 1
   explosion: {fileID: 1000013636901748, guid: 09f7feb6ef0198f46823544edb96af30, type: 2}
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  shotDelay: 0.3
+  shotDelay: 0.6
   bullet: {fileID: 1000012775022644, guid: 788128e804c62204b84dd21d880bcefd, type: 2}
   canShot: 1
   explosion: {fileID: 1000013636901748, guid: 09f7feb6ef0198f46823544edb96af30, type: 2}
@@ -619,6 +619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f157c0f65b081bf438fd76417a0488ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 10
 --- !u!114 &114000012026784780
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -646,6 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f157c0f65b081bf438fd76417a0488ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 10
 --- !u!114 &114000012960289972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -657,6 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f157c0f65b081bf438fd76417a0488ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 10
 --- !u!212 &212000011979049400
 SpriteRenderer:
   m_ObjectHideFlags: 1
